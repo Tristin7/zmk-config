@@ -1,11 +1,11 @@
 #define CONFIG_WIRELESS
-#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
+#define ZMK_BASE_LAYER(name, X_LT, X_RT, X_LM, X_RM, X_LB, X_RB, X_LH, X_RH)                   \
     ZMK_LAYER(                                                                 \
         name,                                                                  \
-                 LT RT                                                         \
-                 LM RM                                                         \
-                 LB RB                                                         \
-        &kp LGUI LH RH &smart_mouse                                            \
+                 X_LT X_RT                                                         \
+                 X_LM X_RM                                                         \
+                 X_LB X_RB                                                         \
+        &kp LGUI X_LH X_RH &smart_mouse                                            \
     )
 
 #include "base.keymap"
